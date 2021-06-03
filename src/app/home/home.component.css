@@ -1,0 +1,48 @@
+img {
+    width     : 100%;
+    height    : 50vh;
+    object-fit: fill;
+}
+
+img.ng-lazyloaded {
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin   : auto;
+}
+
+.column {
+    float : left;
+    width : 32%;
+    margin: 5px;
+    /* Should be removed. Only for demonstration */
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    /* For mobile phones: */
+    .column {
+        width: 30%;
+    }
+
+    img {
+        height: 30vh;
+    }
+
+    .container {
+        margin: auto;
+    }
+}
